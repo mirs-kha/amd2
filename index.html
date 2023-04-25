@@ -9,22 +9,30 @@
 </head>
 <body>
 
-    <nav>
+    <nav  class="topnav" id="myTopnav">
 
         <div class="logo">
             <img src="assets/images/amd-logo.jpg" alt="AMD Logo" title="AMD Logo" width="120">
 
         </div>
 
-        <div class="menu">
-            <div class="links">
-                <a href="#"> Produits</a>
-                <a href="#"> Solutions</a>
-                <a href="#"> Téléchargements et assistance</a>
-                <a href="#"> Acheter</a>
-            </div>
-
-        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#home">Produits</a>
+            <a href="#news">Solutions</a>
+            <a href="#contact">Téléchargements et assistance</a>
+            <!-- <div class="dropdown">
+              <button class="dropbtn">Dropdown 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>  -->
+            <a href="#about">Acheter</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
 
         <div class="droite">
             
@@ -33,29 +41,52 @@
     </nav>
 
 
-    <div class="hero">
+    <div class="myhero">
+        <div class="arianne">
+            <a href="/">Home</a> > <a href="#">A propos d'AMD</a>
+        </div>
 
+        <div class="parallax-wrapper">
+            <div class="hero parallax-content"><img src="https://www.amd.com/content/dam/amd/en/images/backgrounds/lifestyle/1055680-corporate-locations-amd-campus.jpg" alt="amd"/>
+            <div class="hero__title">
+                <h1>Contacter AMD</h1>
+            </div>
+            </div>
+        </div>
     </div>
-
 
     <div class="solution">
 
-        <h2></h2>
+        <h2>AMD dispose de la solution</h2>
 
-        <p></p>
+        <p>Contactez nous si vous avez besoin d'assistance technique, si vous avez des questions sur les ventes ou pour en savoir plus sur notre entreprise.</p>
 
 
         <div class="solutions">
 
             <div class="soluce1">
+                <h3>Assistance technique et garantie</h3>
+                <p><a href="#">Assistance sur les processeurs et solutions graphiques</a></p>
+                <p><a href="#">Assistance FPGA et SoC adaptatifs (systèmes sur puce)</a></p>
 
             </div>
 
-            <div class="soluce2">
+            <div class="soluce1">
+                <h3>Ventes de produits</h3>
+                <p><a href="#">Ventes de processeurs pour serveurs</a></p>
+                <p><a href="#">Ventes de processeurs pour stations de travail</a></p>
+                <p><a href="#">Ventes de processeurs intégrés</a></p>
+                <p><a href="#">Assistance FPGA et SoC adaptatifs (systèmes sur puce)</a></p>
 
             </div>
 
-            <div class="soluce3">
+            <div class="soluce1">
+                <h3>
+                    Partenaires</h3>
+                    <p><a href="#">Partenaires technologiques de calcul adaptatif</a></p>
+                    <p><a href="#">Distributeurs agréés de calcul adaptatif</a></p>
+                    <p><a href="#">Distributeurs agréés de processeurs et solutions graphiques</a></p>
+
                 
             </div>
         </div>
@@ -107,6 +138,15 @@
         </footer>
 
 
-    
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    </script>
 </body>
 </html>
