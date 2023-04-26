@@ -5,6 +5,18 @@
     font-family: Open Sans,arial,sans-serif;
 }
 
+input, select{
+    width: 100%;
+    text-align: left;
+    height: 50px;
+    border: none;
+    margin: 15px 0;
+}
+
+label{
+    padding: 15px 0;
+}
+
 
 
 h2{
@@ -407,6 +419,13 @@ footer a:hover{
 .minilienfooter p{
     font-size: smaller;
 }
+
+#formfoot {
+    width: 100%;
+    padding: 50px 0;
+    text-align: left;
+    display: none;
+  }
 @media screen and (max-width: 1200px){
     .solutions{
         display: flex;
@@ -428,6 +447,7 @@ footer a:hover{
         width: 100%;
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
 
     .abo{
@@ -437,6 +457,10 @@ footer a:hover{
     
 
     .minilienfooter{
+        width: 100%;
+    }
+
+    #formfoot {
         width: 100%;
     }
 
@@ -471,6 +495,7 @@ footer a:hover{
 
     .hautfooter{
         width: 100%;
+        padding: 0;
 
             display: flex;
             flex-direction: column;
@@ -486,6 +511,9 @@ footer a:hover{
     .minilienfooter{
         width: 100%;
     }
+
+    #formfoot {
+        width: 100%;}
 
 
 
