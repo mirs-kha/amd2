@@ -426,6 +426,14 @@ footer a:hover{
     text-align: left;
     display: none;
   }
+
+  .abo{
+    text-align: left;
+  }
+
+  .abo p{
+    border-bottom: solid 1px white;
+  }
 @media screen and (max-width: 1200px){
     .solutions{
         display: flex;
